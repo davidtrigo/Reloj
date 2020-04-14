@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        :root{
+            
+        }
+        :not(:defined) {
+            display: none;
+            /*mientras no esten definidos no se muestren y se espera hasta que se definan*/
+        }
+        html{
+            font-size: 100%;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            line-height: 1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        .parent{
+            position: relative;
+            border: 0.625rem solid red;
+            width: 100%;
+            height: 100%;
+        }
+        .child{
+            position: absolute;
+            width: 3.125rem;
+            height: 125rem;
+            border: 0.625rem solid blue;
+            right: 0.938rem;
+            bottom: 5rem;
+            
+        }
+        .dialog{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left:0;
+            top:0;
+            backdrop-filter: blur(5px) contrast(.1);
+            z-index: 0;
+        }
+        bcn-calendar{
+            display: inline-block;
+        }
+    </style>
+    
+</head>
+
+<body>
+  
+</body>
+    <h1>Calendar 1</h1>
+    <bcn-calendar></bcn-calendar>
+    <h1>Calendar 2</h1>
+    <bcn-calendar></bcn-calendar>
+    <h1>Calendar 3</h1>
+    <bcn-calendar></bcn-calendar>
+ 
+    
+<!--  <div class="parent">
+        <button id="open">Abrir</button>
+    </div>
+   
+    <script>
+
+        var open = document.querySelector('#open');
+        var parent = document.querySelector('.parent');
+        open.addEventListener('click',()=>{
+            var div = document.createElement('div');
+            var dialog = document.createElement('div');
+            
+            dialog.classList.add('dialog')
+            div.classList.add('child');
+            document.body.appendChild(dialog);
+            parent.appendChild(div);
+        })
+    </script>
+     -->
+    <script type="module" src="src/index.js"></script>
+</body>
+
+</html>

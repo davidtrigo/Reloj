@@ -1,0 +1,22 @@
+M
+
+rem
+em
+
+em===16px
+% unidad de porcentaje
+
+diseñador px-->rem o em    cambiar px a rem px/16
+
+1.rem
+    html 
+        body
+            div rem siempre root (html)
+2. em
+    html 
+        body
+            div em root si ningún padre cambia la medida del font-size
+
+font-size;
+line-height;
+
